@@ -1,14 +1,18 @@
 {
-    "login":"input#login_field",
+    "username":"input#login_field",
     "password":"input#password",
-    "forgotPassword":"div#",
+    "forgotPassword":"a#forgot-password",
     "SignInPasskey":"webauthn-subtle.js-webauthn-subtle",
     "createAccount":"//a[@data-ga-click='Sign in, switch to sign up']",
     "terms":"//a[text()='Terms']",
     "Privacy":"//a[text()='Privacy']",
     "Docs":"//a[text()='Docs']",
-    "contactSupport":"//a[text()='Contact GitHub Support']",
-    "cookies":"//a[text()='Manage cookies']",
-    "personalInformation":"//a[text()='Do not share my personal information']"  
-
+    "signIn":"input[name='commit']",
+    "contactSupport":"//a[contains(text(), 'Contact GitHub Support')]",
+    "cookies":"//a[contains(text(),'Manage cookies']",
+    "personalInformation":"//a[contains(text(),'Do not share my personal information']",
+    "alert":"div.js-flash-alert",
+    "closeAlert":"div.flash.flash-full.flash-error button[aria-label='Dismiss this message']",
+    "twoFactorAuthentication":"input#app_totp",
+    "verifyButton":"button.btn-primary.btn.btn-block"
 }
