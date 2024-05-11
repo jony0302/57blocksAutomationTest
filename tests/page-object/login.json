@@ -1,0 +1,14 @@
+{
+    "login":"input#login_field",
+    "password":"input#password",
+    "forgotPassword":"div#",
+    "SignInPasskey":"webauthn-subtle.js-webauthn-subtle",
+    "createAccount":"//a[@data-ga-click='Sign in, switch to sign up']",
+    "terms":"//a[text()='Terms']",
+    "Privacy":"//a[text()='Privacy']",
+    "Docs":"//a[text()='Docs']",
+    "contactSupport":"//a[text()='Contact GitHub Support']",
+    "cookies":"//a[text()='Manage cookies']",
+    "personalInformation":"//a[text()='Do not share my personal information']"  
+
+}
