@@ -128,9 +128,6 @@ test('Unsuccessful login with Two-factor methods', async ({ page }) => {
   await expect(alert).not.toBeVisible();
   await twoFactor.fill("123456");
   await verify.click();
-  //await expect(page).toHaveTitle('Sign in to GitHub · GitHub');
-
-
   await expect(alert).toHaveText("Two-factor authentication failed.")
   await expect(closeAlert).toBeVisible();
   await closeAlert.click();
