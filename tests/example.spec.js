@@ -2,7 +2,7 @@
 const { test, expect } = require('@playwright/test');
 import * as locatorLogin from "../tests/page-object/login.json"
 
-test.skip('Github Login page', async ({ page }) => {
+test('Background - Github Login page', async ({ page }) => {
   await page.goto('https://github.com/login');
 
   const username = await page.locator(locatorLogin.username);
@@ -33,7 +33,7 @@ test.skip('Github Login page', async ({ page }) => {
 
 });
 
-test.skip('Unsuccessful login', async ({ page }) => {
+test('Unsuccessful login with credentials', async ({ page }) => {
   await page.goto('https://github.com/login');
 
   const username = await page.locator(locatorLogin.username);
@@ -53,7 +53,7 @@ test.skip('Unsuccessful login', async ({ page }) => {
 
 });
 
-test.skip('Login with empty fields', async ({ page }) => {
+test('Login with empty fields', async ({ page }) => {
   await page.goto('https://github.com/login');
 
   const username = await page.locator(locatorLogin.username);
@@ -69,7 +69,7 @@ test.skip('Login with empty fields', async ({ page }) => {
 });
 
 
-test.skip('Successful login', async ({ page }) => {
+test('Successful login with credentials', async ({ page }) => {
   await page.goto('https://github.com/login');
 
   const username = await page.locator(locatorLogin.username);
@@ -83,8 +83,6 @@ test.skip('Successful login', async ({ page }) => {
   await signIn.click();
   await expect(alert).not.toBeVisible();
   await expect(page).toHaveTitle('GitHub');
-  
-
 });
 
 test.skip('Successful login with Two-factor methods', async ({ page }) => {
@@ -133,3 +131,4 @@ test('Unsuccessful login with Two-factor methods', async ({ page }) => {
   await closeAlert.click();
   await expect(alert).not.toBeVisible();
 });
+
